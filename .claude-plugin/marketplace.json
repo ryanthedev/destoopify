@@ -1,0 +1,5 @@
+{
+  "name": "destoopify",
+  "owner": { "name": "ryanthedev" },
+  "plugins": [{ "name": "destoopify", "source": "./", "description": "Fixes spelling and grammar in your prompt before Claude reads it" }]
+}
