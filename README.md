@@ -7,7 +7,6 @@ When you press Enter, destoopify sends what you typed to Haiku with one instruct
 ## What you see
 
 - A status line under the prompt: `✎ destoopify: on`, `checking…`, `no typos`, or `fixed 2 — teh → the, plese → please`.
-- A toast listing the words it changed, when it changed any.
 
 ## When it stays out of the way
 

@@ -11,7 +11,6 @@ function engine(on: any, reply: unknown, store: Record<string, unknown> = {}) {
     return { text: e.text }
   })
   on('model.complete', () => reply)
-  on('ui.toast', () => ({ value: undefined }))
   on('store.get', (_: unknown, e: { key: string }) => ({ value: store[e.key] }))
   on('store.set', (_: unknown, e: { key: string; value: unknown }) => {
     store[e.key] = e.value

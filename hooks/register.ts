@@ -116,7 +116,6 @@ export const register: Register = on => {
 
     const shown = edits.slice(0, 3).join(', ') + (edits.length > 3 ? ` +${edits.length - 3} more` : '')
     $.ui.status(`${LABEL}: fixed ${edits.length} — ${shown}`)
-    $.ui.toast(`destoopified: ${shown}`)
     return next({ ...e, text: fixed })
   })
 }
