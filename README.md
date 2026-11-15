@@ -20,6 +20,19 @@ Each fix is one small Haiku call billed to your Claude account, usually about a 
 
 Type `/destoopify`. The setting is remembered across sessions.
 
+## Keep words it must never change
+
+If destoopify "fixes" a word you meant, such as a tool name (`upublish` becoming `unpublish`), keep it:
+
+```
+/destoopify keep upublish
+```
+
+- `/destoopify keep <word>…` adds words, `/destoopify forget <word>…` removes them, `/destoopify words` lists them.
+- Kept words match without regard to case or surrounding punctuation, so `Upublish's,` counts.
+- Haiku is told the list, and destoopify also checks the reply: any kept word Haiku changed is put back as you typed it, while its other fixes still land.
+- The list lives with your Claude Code settings on this computer; it does not follow you to other machines.
+
 ## Install
 
 At the prompt of a Claude Code session:
